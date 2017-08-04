@@ -17,7 +17,7 @@ namespace LunoApi.Net.MarketData
         }
         public async Task<ITicker> GetTicker(string pair)
         {
-            var data = await _lunoAPIClient.GetUnAuthenticatedData<Ticker>("ticker", "pair=" + pair);
+            var data = await _lunoAPIClient.GetPublicData<Ticker>("ticker", "pair=" + pair);
             return data;
         }
     }

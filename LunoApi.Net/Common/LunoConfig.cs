@@ -9,7 +9,6 @@ namespace LunoApi.Net.Common
         public string ID { get; set; }
 
         public string Secret { get; set; }
-        public string PublicAPI { get; set; }
-        public string PrivateAPI { get; set; }        
+        public string PublicAPIUrl { get; set; }        
     }
 }
