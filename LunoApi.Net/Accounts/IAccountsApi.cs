@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LunoApi.Net.Accounts
 {
-    public interface IAccounts
+    public interface IAccountsApi
     {
         Task<Balance> GetBalance();
     }

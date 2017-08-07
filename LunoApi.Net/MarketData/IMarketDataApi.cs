@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LunoApi.Net.MarketData
 {
-    public interface IMarketData
+    public interface IMarketDataApi
     {
         Task<ITicker> GetTicker(string pair);
     }

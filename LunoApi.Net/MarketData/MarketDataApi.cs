@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace LunoApi.Net.MarketData
 {
-    public class MarketData : IMarketData
+    public class MarketDataApi : IMarketDataApi
     {
         private LunoApiClient _lunoAPIClient { get; set; }
 
-        internal MarketData(LunoApiClient webClient)
+        internal MarketDataApi(LunoApiClient webClient)
         {
             _lunoAPIClient = webClient;
         }

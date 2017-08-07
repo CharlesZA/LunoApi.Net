@@ -14,19 +14,26 @@ namespace LunoApi.Net.Demo
             lunoAPI = new LunoApi(lunoConfig);
             GetTicker();
             GetBalance();
+            CreateQuote();
             Console.ReadLine();
         }
 
 
         private static async void GetTicker()
         {
-            var result = await lunoAPI.MarketData.GetTicker("XBTZAR");
+            var result = await lunoAPI.MarketDataApi.GetTicker("XBTZAR");
             Console.WriteLine(JsonConvert.SerializeObject(result));
         }
 
         private static async void GetBalance()
         {
-            var result = await lunoAPI.Accounts.GetBalance();
+            var result = await lunoAPI.AccountsApi.GetBalance();
+            Console.WriteLine(JsonConvert.SerializeObject(result));
+        }
+
+        private static async void CreateQuote()
+        {
+            var result = await lunoAPI.QuotesApi.CreateQuote("SELL",100, "ZARXBT");
             Console.WriteLine(JsonConvert.SerializeObject(result));
         }
     }

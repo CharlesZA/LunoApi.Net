@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace LunoApi.Net.Accounts
 {
-    public class Accounts: IAccounts
+    public class AccountsApi: IAccountsApi
     {
         private LunoApiClient _lunoAPIClient { get; set; }
 
-        internal Accounts(LunoApiClient webClient)
+        internal AccountsApi(LunoApiClient webClient)
         {
             _lunoAPIClient = webClient;
         }
