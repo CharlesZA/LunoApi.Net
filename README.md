@@ -1,2 +1,2 @@
 # LunoApi.Net
-.Net Core Wrapper for the Luno Bitcoin Exchange API
+.Net Core C# Wrapper for the Luno Bitcoin Exchange API
